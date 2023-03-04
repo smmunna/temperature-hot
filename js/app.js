@@ -10,9 +10,8 @@ const weatherApi = async (city) => {
         const inputValidation = document.getElementById('inputValidation');
 
         if (city === data.name) {
-            console.log('matched')
+            //Passing data for displaying
             displayData(data);
-
             weatherStatus.classList.remove('d-none');
             inputValidation.classList.add('d-none');
         }
