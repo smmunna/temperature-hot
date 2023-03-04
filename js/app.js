@@ -24,7 +24,6 @@ const weatherApi = async (city) => {
     } catch (error) {
         console.log('Error occurs with api' + error);
     }
-
 }
 
 // DisplayWeather Data to the FrontEnd;
@@ -42,7 +41,6 @@ const displayData = (weather) => {
 
     const clouds = document.getElementById('clouds');
     clouds.innerText = daylight;
-
 }
 
 //Searching by cityName;
