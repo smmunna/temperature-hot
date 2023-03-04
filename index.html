@@ -28,11 +28,15 @@
                 </div>
             </div>
         </form>
-        <div class="weather-status text-white text-center">
+        <div id="weatherStatus" class="weather-status text-white text-center d-none">
             <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
             <h1 id="cityName"></h1>
             <h3><span id="temparature"></span>&deg;C</h3>
             <h1 class="lead" id="clouds"></h1>
+        </div>
+        <!-- Input Validation -->
+        <div id="inputValidation" class="d-none">
+            <h3 style="color:whitesmoke;" class="text-center display-6">There is no city along with this 'Name'</h3>
         </div>
     </div>
 
