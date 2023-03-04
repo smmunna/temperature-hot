@@ -25,6 +25,10 @@ const displayData = (weather,city)=>{
 
     const clouds = document.getElementById('clouds');
     clouds.innerText = daylight;
+
+    const weatherStatus = document.getElementById('weatherStatus');
+    weatherStatus.classList.remove('d-none');
+
     }
 
 }
