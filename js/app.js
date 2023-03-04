@@ -14,8 +14,11 @@ const displayData = (weather,city)=>{
     const temparature = weather.main.temp;
     const daylight = weather.weather[0].main;
 
-    if (city !== city_name) {
-        console.log('Not Matched City')
+    if (city_name !== city ) {
+        // If the city not found with this name;
+        const inputValidation = document.getElementById('inputValidation');
+        inputValidation.classList.remove('d-none');
+        
     } else {
     const cityName = document.getElementById('cityName');
     cityName.innerText = city_name;
@@ -26,6 +29,7 @@ const displayData = (weather,city)=>{
     const clouds = document.getElementById('clouds');
     clouds.innerText = daylight;
 
+    // Weather Status block showing with validation;
     const weatherStatus = document.getElementById('weatherStatus');
     weatherStatus.classList.remove('d-none');
 
