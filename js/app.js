@@ -8,8 +8,8 @@ const weatherApi = async(city) =>{
 }
 
 // DisplayWeather Data to the FrontEnd;
-const displayData = ()=>{
-
+const displayData = (weather)=>{
+    console.log(weather)
 }
 // Calling the WeatherApi function;
 weatherApi('dhaka')
