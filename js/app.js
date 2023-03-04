@@ -26,7 +26,9 @@ const displayData = (weather)=>{
 }
 
 //Searching by cityName;
-
+document.getElementById('searchCity').addEventListener('click',function(){
+    console.log('first')
+})
 
 // Calling the WeatherApi function;
 //weatherApi('dhaka')
