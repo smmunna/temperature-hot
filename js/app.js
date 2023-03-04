@@ -9,10 +9,20 @@ const weatherApi = async(city) =>{
 
 // DisplayWeather Data to the FrontEnd;
 const displayData = (weather)=>{
-    console.log(weather)
+    //console.log(weather)
     const city_name = weather.name;
     const temparature = weather.main.temp;
-    const daylight = weather.weather[0].main
+    const daylight = weather.weather[0].main;
+
+    const cityName = document.getElementById('cityName');
+    cityName.innerText = city_name;
+
+    const tempaRature = document.getElementById('temparature');
+    tempaRature.innerText = temparature;
+
+    const clouds = document.getElementById('clouds');
+    clouds.innerText = daylight;
+
 }
 // Calling the WeatherApi function;
 weatherApi('dhaka')
