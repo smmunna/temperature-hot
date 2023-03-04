@@ -25,6 +25,8 @@ const displayData = (weather)=>{
 
 }
 
-//
+//Searching by cityName;
+
+
 // Calling the WeatherApi function;
-weatherApi('dhaka')
+//weatherApi('dhaka')
