@@ -46,8 +46,11 @@ const displayData = (weather) => {
 document.getElementById('searchCity').addEventListener('click', function () {
     const cityInput = document.getElementById('citynameInput');
     const cityNameValue = cityInput.value;
-    weatherApi(cityNameValue);
-
+    if (cityNameValue === '') {
+        alert('Input the city name like, Dhaka, London etc...');
+    } else {
+        weatherApi(cityNameValue);
+    }
     // Clearing the Input box;
     cityInput.value = '';
 })
