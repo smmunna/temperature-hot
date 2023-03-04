@@ -24,5 +24,7 @@ const displayData = (weather)=>{
     clouds.innerText = daylight;
 
 }
+
+//
 // Calling the WeatherApi function;
 weatherApi('dhaka')
